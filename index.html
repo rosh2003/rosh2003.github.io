@@ -67,12 +67,37 @@
     <h1>Roshan Naik | Portfolio</h1>
     <p>Welcome to my portfolio! Explore projects demonstrating my engineering expertise and dedication to continuous learning.</p>
 </header>
+<nav>
+    <ul style="list-style: none; display: flex; justify-content: center; gap: 15px; padding: 0;">
+        <li><a href="#spotify" style="text-decoration: none; color: #1A2A6C;">Spotify Project</a></li>
+        <li style="color: #1A2A6C;">|</li>
+        <li><a href="#brain-mri" style="text-decoration: none; color: #1A2A6C;">Brain MRI Project</a></li>
+        <li style="color: #1A2A6C;">|</li>
+        <li><a href="#financial-ml" style="text-decoration: none; color: #1A2A6C;">Financial ML</a></li>
+        <li style="color: #1A2A6C;">|</li>
+        <li><a href="#wind-turbine" style="text-decoration: none; color: #1A2A6C;">Wind Turbine</a></li>
+        <li style="color: #1A2A6C;">|</li>
+        <li><a href="#heuristic-optimization" style="text-decoration: none; color: #1A2A6C;">Campus Optimization</a></li>
+        <li style="color: #1A2A6C;">|</li>
+        <li><a href="#interactive-dashboard" style="text-decoration: none; color: #1A2A6C;">Dashboard</a></li>
+    </ul>
+</nav>
 
+<style>
+    hr {
+        border: none;
+        border-top: 2px solid #FFFFFF; /* Navy blue color for the divider */
+        margin: 2em 0; /* Space around the divider */
+        width: 80%; /* Optional: Limit the width of the divider */
+        margin-left: auto; /* Center the divider */
+        margin-right: auto;
+    }
+</style>
 <div class="container">
 
     <!-- Featured Project Section -->
     <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2>
-    <section class="section">
+    <section id="spotify" class="section">
         <!-- <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2> -->
         <div class="project">
             <p class="project-title">Spotify Song and Artist Recommender</p>
@@ -80,7 +105,8 @@
             
             <a href="https://github.com/rosh2003/spotify-streamlit-app" class="btn">View on GitHub</a>
             <!-- <a class="btn-disabled" title="Local Only – Run on Your Machine">Live App</a> -->
-            <a href="https://spotify-app-app-zhrnowrmawtiapdddth9dl.streamlit.app" target="_blank" class="btn" title="Best run on a local machine">Live App (Limited Access)</a>
+            <a href="https://spotify-app-app-zhrnowrmawtiapdddth9dl.streamlit.app" target="_blank" class="btn" title="Best run on a local machine">Live App (Limited Functionality)</a>
+            <p class="project-desc">Due to privacy reasons, the 'My Liked Songs' and 'View Your Top Artists' sections are disabled in the live app.</p>
 
         </div>
     </section>
@@ -104,55 +130,83 @@
     </style>
     <!-- University Projects Section -->
     <h2>University Projects</h2>
-    <section class="section">
+    <section id="brain-mri" class="section">
         <!-- <h2>University Projects</h2> -->
 
         <div class="project">
             <p class="project-title">Honors Project: Brain MRI Implicit Harmonisation</p>
-            <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p>
-            
+            <!-- <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p> -->
+            <p class="project-desc">
+                A research-driven initiative focused on developing machine learning and statistical models for implicit harmonization of brain MRI data, addressing inter-site variability in multi-site datasets. The project aimed to enhance the quality of functional MRI input data to improve classification accuracy in detecting Autism Spectrum Disorder (ASD). By leveraging advanced techniques like connectivity matrix harmonization, the project achieved a promising 2% improvement in ASD classification accuracy using the ABIDE I dataset, highlighting the potential of this approach in real-world applications.
+            </p>
+            <p class="project-desc">
+                Working in the unfamiliar field of medical imaging, I navigated complex challenges that required innovative thinking and a strong technical foundation. The need to bridge my existing expertise with new domain knowledge highlighted my ability to learn quickly and apply machine learning methods effectively in interdisciplinary settings. This experience reflects the rigor and focus I bring to solving difficult problems, ensuring impactful and measurable results even in novel and demanding contexts.
+            </p>
         </div>
     </section>
 
-    <section class="section">
+    <section id="financial-ml" class="section">
         <div class="project">
             <p class="project-title">Financial Machine Learning Replication Project</p>
-            <p class="project-desc">A replication project in financial machine learning papaer aimed at recreating an Out-of-Sample R² value, using neural networks for time-series financial data. This project introduced unique training-validation methods specific to financial data, furthering my skills in applying machine learning to finance. It was insightful using an increasing training set on time series data to make OOS monthly predictions. The financial data was extremely noisy and difficult to capture to a high standard. Seen below is the 3 layer ensemble neural network OOS predictions, with the results highlighting the difficulty of crafting a model which accounts for eradic variability. </p>
+            <p class="project-desc">
+                A replication study in financial machine learning focused on reproducing an Out-of-Sample (OOS) R² value using neural networks trained on time-series financial data. The project explored innovative training-validation approaches tailored to the complexities of financial datasets, such as rolling and expanding training windows, to improve monthly OOS predictions. Despite the high noise and variability inherent in financial data, the project provided valuable insights into model performance and limitations, advancing my skills in feature engineering, time-series analysis, and neural network optimization for challenging domains.
+            </p>
+            <p class="project-desc">
+                The objective was not to achieve the best possible results but to faithfully replicate the findings of the study Economic Trends and Equity Risk Premium by Yufeng Han, Yueliang Lu, and Guofu Zhou. To this end, I implemented a neural network with three hidden layers and ReLU activation, using 14 predictors derived from the study. The process involved manual hyperparameter tuning for L1 penalty values and learning rates, reflecting the need for careful experimentation in financial modeling. Working with time-series data introduced additional challenges, such as the inability to use standard cross-validation or data shuffling, which required tailoring the workflow to preserve temporal integrity. The study also employed a unique R² formula, further emphasizing the importance of aligning implementation details with the original research.
+            </p>
             <img src="finance_OOS.png" alt="OOS equity premium predictions" class="project-image">
+            <p class="project-desc">
+                As seen above, this is the ensemble OOS predictions, showcasing the noise and generalization of the final model.
+            </p>
         </div>
-
-
     </section>
 
 
-    <section class="section">
+    <section id="wind-turbine" class="section">
         <div class="project">
             <p class="project-title">Capstone Project: Wind Turbine Design and Testing</p>
-            <p class="project-desc">As part of a four-member team, I contributed to the design and testing of a wind turbine. We used Blade Element Momentum theory for airfoil selection and applied a genetic algorithm metaheuristic for optimal blade orientations and parameters. The turbine was built and tested across different wind speeds to validate performance, underscoring skills in team-based engineering and experimental validation. An image of my team and the wind turbine we built can be seen below:</p>
+            <p class="project-desc">Collaborated as part of a four-member team to design, build, and test a functional wind turbine. This capstone project exemplified the key principles of my BE (Hons) in Engineering Science degree, particularly in computational modeling and analytical thinking. Blade Element Momentum (BEM) theory was used to select airfoils that offered optimal aerodynamic performance, while a genetic algorithm was employed to determine the most efficient blade orientations and design parameters for maximum energy generation.</p>
+            <p class="project-desc">The project required a systematic approach to problem-solving and effective communication within the team. This was especially crucial for ensuring the blades were manufactured reproducibly, maintaining uniformity across all components. Setting the correct blade setting angle involved precise calculations and testing to ensure performance matched theoretical predictions. Additionally, optimizing blade design parameters using computational tools underscored the importance of combining theoretical knowledge with hands-on engineering.</p>
+            <p class="project-desc">Post-construction, the turbine underwent rigorous testing across various wind speeds to evaluate its performance metrics, showcasing the practical application of engineering principles to solve real-world challenges. This project highlights my ability to integrate computational optimization techniques, practical problem-solving skills, and effective team collaboration to deliver a tested, high-performing solution.</p>
             <img src="20240520_113917.jpg" alt="Windmill group photo" class="project-image">
+            <p class="project-desc">Above is our group and the turbine prior to testing. </p>
         </div>
     </section>
     
-    <!-- <section class="section"> -->
-        <!-- <h2>University Projects</h2> -->
+    <section id="heuristic-optimization" class="section">
+        <div class="project">
+            <p class="project-title">Heuristic Optimization Project: Minimizing Campus Travel</p>
+            <p class="project-desc">As part of one of my courses, I worked on optimizing campus locations for five faculties and five potential sites. The objective was to minimize the total travel distance for students and staff moving between faculties and their respective locations. This problem required designing and implementing heuristic algorithms to explore potential solutions effectively.</p>
+            <p class="project-desc">The first task involved coding the Next Descent and Steepest Descent heuristics, both employing the same neighborhood rule. These approaches provided initial insights into solution quality and efficiency. The results are shown below:</p>
+            <img src="noTabu.png" alt="Next Descent and Steepest Descent" class="project-image">
+            <p class="project-desc">Interestingly, Next Descent achieved a lower objective function value compared to Steepest Descent in this case, showcasing the nuances of heuristic performance.</p>
+            <p class="project-desc">The second task involved implementing the Tabu Search algorithm, incorporating a history of eight moves to escape local optima. This algorithm outperformed both Next Descent and Steepest Descent, delivering superior results as illustrated below:</p>
+            <img src="all_algorithms.png" alt="Performance Comparison of Heuristics" class="project-image">
+            <p class="project-desc">
+                This project demonstrated my ability to design and compare heuristic optimization algorithms, analyze performance differences, and solve practical problems using computational approaches.
+            </p>
+        </div>
+    </section>
 
-        <!-- <div class="project"> -->
-            <!-- <p class="project-title">Honors Project: Brain MRI Implicit Harmonisation</p> -->
-            <!-- <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p> -->
-        <!-- </div> -->
+    <section id="interactive-dashboard" class="section">
+        <p class="project-title">Interactive Dashboard: State Comparison in the USA</p>
+        <p class="project-desc">
+            During my second year, I developed an interactive R Shiny dashboard as part of a coursework project. The goal was to create a user-friendly tool to visualize how a selected state compared to others across various metrics. The dashboard allows users to:
+        </p>
+        <ul class="project-desc">
+            <li>Select a specific state from the map.</li>
+            <li>Choose variables for the x and y axes to customize the scatter plot.</li>
+            <li>Visualize the selected state's position (in red) relative to other states in the dataset.</li>
+        </ul>
+        <p class="project-desc">
+            This project demonstrated my ability to design intuitive interfaces and work with interactive data visualization tools in R. It helped solidify my understanding of data processing, customization of visual elements, and effective presentation of insights to users.
+        </p>
+        <p class="project-desc">
+            Click the button below to explore the dashboard:
+        </p>
+        <a href="https://rnaik.shinyapps.io/2C-Task-14/" class="btn" target="_blank">View Dashboard</a>
 
-        <!-- <div class="project"> -->
-            <!-- <p class="project-title">Financial Machine Learning Replication</p> -->
-            <!-- <p class="project-desc">A replication project in financial machine learning papaer aimed at recreating an Out-of-Sample R² value, using neural networks for time-series financial data. This project introduced unique training-validation methods specific to financial data, furthering my skills in applying machine learning to finance. It was insightful using an increasing training set on time series data to make OOS monthly predictions. The financial data was extremely noisy and difficult to capture to a high standard. Seen below is the 3 layer ensemble neural network OOS predictions, with the results highlighting the difficulty of crafting a model which accounts for eradic variability. <NEED TO insert iamge></NEED>  </p> -->
-        <!-- </div> -->
-
-        <!-- <div class="project"> -->
-            <!-- <p class="project-title">Capstone Project: Wind Turbine Design and Testing</p> -->
-            <!-- <p class="project-desc">As part of a four-member team, I contributed to the design and testing of a wind turbine. We used Blade Element Momentum theory for airfoil selection and applied a genetic algorithm metaheuristic for optimal blade orientations and parameters. The turbine was built and tested across different wind speeds to validate performance, underscoring skills in team-based engineering and experimental validation. An image of my team and the wind turbine we built can be seen below:</p> -->
-        <!-- </div> -->
-
-    <!-- </section> -->
-
+    </section>
 </div>
 
 <footer>
