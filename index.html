@@ -71,8 +71,9 @@
 <div class="container">
 
     <!-- Featured Project Section -->
+    <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2>
     <section class="section">
-        <h2>Featured Project: Spotify Song and Artist Recommender</h2>
+        <!-- <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2> -->
         <div class="project">
             <p class="project-title">Spotify Song and Artist Recommender</p>
             <p class="project-desc">A web application built with Streamlit and Spotipy, allowing users to search for songs and artists based on mood, popularity, and criteria. This project integrates with the Spotify API, demonstrating skills in Python, API integration, and UI development.</p>
@@ -101,26 +102,55 @@
             background-color: #15305b; /* Darker navy for hover */
         }
     </style>
-    <!-- Other Projects Section -->
+    <!-- University Projects Section -->
+    <h2>University Projects</h2>
     <section class="section">
-        <h2>Other Projects</h2>
+        <!-- <h2>University Projects</h2> -->
 
         <div class="project">
-            <p class="project-title">Honours Project: Brain MRI Implicit Harmonisation</p>
-            <p class="project-desc">This project focused on developing machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across sites. It showcases my skills in medical imaging, machine learning model evaluation, and application in real-world datasets.</p>
+            <p class="project-title">Honors Project: Brain MRI Implicit Harmonisation</p>
+            <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p>
+            
         </div>
+    </section>
 
+    <section class="section">
         <div class="project">
-            <p class="project-title">Financial Machine Learning Replication</p>
-            <p class="project-desc">A replication project in financial machine learning aimed at recreating an Out-of-Sample R² value, using neural networks for time-series financial data. This project introduced unique training-validation methods specific to financial data, furthering my skills in applying machine learning to finance.</p>
+            <p class="project-title">Financial Machine Learning Replication Project</p>
+            <p class="project-desc">A replication project in financial machine learning papaer aimed at recreating an Out-of-Sample R² value, using neural networks for time-series financial data. This project introduced unique training-validation methods specific to financial data, furthering my skills in applying machine learning to finance. It was insightful using an increasing training set on time series data to make OOS monthly predictions. The financial data was extremely noisy and difficult to capture to a high standard. Seen below is the 3 layer ensemble neural network OOS predictions, with the results highlighting the difficulty of crafting a model which accounts for eradic variability. </p>
+            <img src="images/finance_OOS.png" alt="OOS equity premium predictions" class="project-image">
         </div>
 
+        </div>
+    </section>
+
+
+    <section class="section">
         <div class="project">
             <p class="project-title">Capstone Project: Wind Turbine Design and Testing</p>
-            <p class="project-desc">As part of a four-member team, I contributed to the design and testing of a wind turbine. We used Blade Element Momentum theory for airfoil selection and applied a genetic algorithm for optimal blade orientations. The turbine was built and tested across different wind speeds to validate performance, underscoring skills in team-based engineering and experimental validation.</p>
+            <p class="project-desc">As part of a four-member team, I contributed to the design and testing of a wind turbine. We used Blade Element Momentum theory for airfoil selection and applied a genetic algorithm metaheuristic for optimal blade orientations and parameters. The turbine was built and tested across different wind speeds to validate performance, underscoring skills in team-based engineering and experimental validation. An image of my team and the wind turbine we built can be seen below:</p>
         </div>
-
     </section>
+    
+    <!-- <section class="section"> -->
+        <!-- <h2>University Projects</h2> -->
+
+        <!-- <div class="project"> -->
+            <!-- <p class="project-title">Honors Project: Brain MRI Implicit Harmonisation</p> -->
+            <!-- <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p> -->
+        <!-- </div> -->
+
+        <!-- <div class="project"> -->
+            <!-- <p class="project-title">Financial Machine Learning Replication</p> -->
+            <!-- <p class="project-desc">A replication project in financial machine learning papaer aimed at recreating an Out-of-Sample R² value, using neural networks for time-series financial data. This project introduced unique training-validation methods specific to financial data, furthering my skills in applying machine learning to finance. It was insightful using an increasing training set on time series data to make OOS monthly predictions. The financial data was extremely noisy and difficult to capture to a high standard. Seen below is the 3 layer ensemble neural network OOS predictions, with the results highlighting the difficulty of crafting a model which accounts for eradic variability. <NEED TO insert iamge></NEED>  </p> -->
+        <!-- </div> -->
+
+        <!-- <div class="project"> -->
+            <!-- <p class="project-title">Capstone Project: Wind Turbine Design and Testing</p> -->
+            <!-- <p class="project-desc">As part of a four-member team, I contributed to the design and testing of a wind turbine. We used Blade Element Momentum theory for airfoil selection and applied a genetic algorithm metaheuristic for optimal blade orientations and parameters. The turbine was built and tested across different wind speeds to validate performance, underscoring skills in team-based engineering and experimental validation. An image of my team and the wind turbine we built can be seen below:</p> -->
+        <!-- </div> -->
+
+    <!-- </section> -->
 
 </div>
 
@@ -132,5 +162,29 @@
     </p>
 </footer>
 
+<style>
+    .contact-link {
+        color: #ffffff; /* White color for better contrast */
+        text-decoration: none;
+    }
+    .contact-link:hover {
+        color: #dcdcdc; /* Light gray on hover */
+    }
+    .contact-link:visited {
+        color: #ffffff; /* Keep links white even if visited */
+    }
+    .project-image {
+        max-width: 100%; /* Image fits within the container */
+        height: auto; /* Maintains aspect ratio */
+        margin-top: 10px;
+        border-radius: 5px; /* Adds rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+</style>
+
 </body>
 </html>
+
+
+
+
