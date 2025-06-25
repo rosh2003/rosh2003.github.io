@@ -1,245 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Roshan Naik, showcasing projects in engineering, machine learning, and data science.">
-    <title>Roshan Naik | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header, footer {
-            background-color: #1A2A6C; /* Navy blue */
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .section {
-            margin: 2em 0;
-            padding: 1em;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #1A2A6C; /* Navy blue for section headers */
-        }
-        .project {
-            margin: 1em 0;
-        }
-        .project-title {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .project-desc {
-            font-size: 0.9em;
-            margin-top: 0.5em;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.5em 1em;
-            color: #fff;
-            background-color: #1A2A6C; /* Navy blue button */
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 0.5em;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Roshan Naik | Portfolio</h1>
-    <p>Welcome to my portfolio! Explore projects demonstrating my engineering expertise and dedication to continuous learning.</p>
-</header>
-<nav>
-    <ul style="list-style: none; display: flex; justify-content: center; gap: 15px; padding: 0;">
-        <li><a href="#spotify" style="text-decoration: none; color: #1A2A6C;">Spotify Project</a></li>
-        <li style="color: #1A2A6C;">|</li>
-        <li><a href="#brain-mri" style="text-decoration: none; color: #1A2A6C;">Brain MRI Project</a></li>
-        <li style="color: #1A2A6C;">|</li>
-        <li><a href="#financial-ml" style="text-decoration: none; color: #1A2A6C;">Financial ML</a></li>
-        <li style="color: #1A2A6C;">|</li>
-        <li><a href="#wind-turbine" style="text-decoration: none; color: #1A2A6C;">Wind Turbine</a></li>
-        <li style="color: #1A2A6C;">|</li>
-        <li><a href="#heuristic-optimization" style="text-decoration: none; color: #1A2A6C;">Campus Optimization</a></li>
-        <li style="color: #1A2A6C;">|</li>
-        <li><a href="#interactive-dashboard" style="text-decoration: none; color: #1A2A6C;">Dashboard</a></li>
-    </ul>
-</nav>
-
-<style>
-    hr {
-        border: none;
-        border-top: 2px solid #FFFFFF; /* Navy blue color for the divider */
-        margin: 2em 0; /* Space around the divider */
-        width: 80%; /* Optional: Limit the width of the divider */
-        margin-left: auto; /* Center the divider */
-        margin-right: auto;
-    }
-</style>
-<div class="container">
-
-    <!-- Featured Project Section -->
-    <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2>
-    <section id="spotify" class="section">
-        <!-- <h2>Featured Personal Project: Spotify Song and Artist Recommender</h2> -->
-        <div class="project">
-            <p class="project-title">Spotify Song and Artist Recommender</p>
-            <p class="project-desc">A web application built with Streamlit and Spotipy, allowing users to search for songs and artists based on mood, popularity, and criteria. This project integrates with the Spotify API, demonstrating skills in Python, API integration, and UI development.</p>
-            
-            <a href="https://github.com/rosh2003/spotify-streamlit-app" class="btn">View on GitHub</a>
-            <!-- <a class="btn-disabled" title="Local Only – Run on Your Machine">Live App</a> -->
-            <a href="https://spotify-app-app-zhrnowrmawtiapdddth9dl.streamlit.app" target="_blank" class="btn" title="Best run on a local machine">Live App (Limited Functionality)</a>
-            <p class="project-desc">Due to privacy reasons, the 'My Liked Songs' and 'View Your Top Artists' sections are disabled in the live app.</p>
-
-        </div>
-    </section>
     
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Portfolio of Roshan Naik, showcasing projects in engineering, machine learning, and data science.">
+        <title>Roshan Naik's Website</title>
+        
+    </head>
+
+    <body>
+        
+        <nav>
+            <div class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>    </nav>
+        <header class="hero", id="home">
+            <div class="hero-content">
+                <img src="naik_roshan(roshannaik1)_square.jpg" alt="Roshan Naik" class="profile-img">
+                <div>
+                    <h1>Roshan Naik</h1>
+                    <h2 style="color: #fff; font-weight: bold;">Engineer & Data Scientist</h2>
+                    <p class="hero-summary">
+                        I’m a recent Engineering Science (Hons) graduate with a passion for machine learning,
+                        data-driven
+                        problem solving, and building things that matter. I thrive at the intersection of analytics,
+                        engineering, and innovation.
+                    </p>
+                    <div class="hero-actions">
+                        <span class="contact-label">Connect with me:</span>
+                        
+                        <a href="https://www.linkedin.com/in/roshan-naik-2b4a52234" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                            <svg class = 'standalone-icon' width="28" height="28" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="52" height="52" rx="10" stroke="white" stroke-width="4" stroke-linejoin="round" />
+                                <path
+                                    d="M36 20C39.1826 20 42.2348 21.2643 44.4853 23.5147C46.7357 25.7652 48 28.8174 48 32V46H40V32C40 30.9391 39.5786 29.9217 38.8284 29.1716C38.0783 28.4214 37.0609 28 36 28C34.9391 28 33.9217 28.4214 33.1716 29.1716C32.4214 29.9217 32 30.9391 32 32V46H24V32C24 28.8174 25.2643 25.7652 27.5147 23.5147C29.7652 21.2643 32.8174 20 36 20Z"
+                                    stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 22H8V46H16V22Z" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                                
+                        </a>
+                            
+                        <a href="mailto:rosh2003@outlook.com" target="_blank" title="Email" aria-label="Email">
+                            <svg class="standalone-icon" width="28" height="28" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M44 12C44 9.8 42.2 8 40 8H8C5.8 8 4 9.8 4 12M44 12V36C44 38.2 42.2 40 40 40H8C5.8 40 4 38.2 4 36V12M44 12L24 26L4 12"
+                                    stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        
+                        </a>
+                        <a href="https://github.com/rosh2003" target="_blank" title="GitHub" aria-label="GitHub">
+
+                            <svg class="standalone-icon" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_601_59)">
+                                    <path
+                                        d="M18 38.0001C8 41.0001 8 33.0001 4 32.0001M32 44.0001V36.2601C32.075 35.3064 31.9462 34.3477 31.622 33.4477C31.2979 32.5477 30.7859 31.727 30.12 31.0401C36.4 30.3401 43 27.9601 43 17.0401C42.9995 14.2478 41.9254 11.5625 40 9.54012C40.9117 7.09713 40.8472 4.39682 39.82 2.00012C39.82 2.00012 37.46 1.30012 32 4.96012C27.416 3.71776 22.584 3.71776 18 4.96012C12.54 1.30012 10.18 2.00012 10.18 2.00012C9.15275 4.39682 9.08829 7.09713 10 9.54012C8.06025 11.5775 6.98505 14.287 7 17.1001C7 27.9401 13.6 30.3201 19.88 31.1001C19.222 31.7801 18.7145 32.5909 18.3906 33.48C18.0667 34.369 17.9336 35.3163 18 36.2601V44.0001"
+                                        stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_601_59">
+                                        <rect width="48" height="48" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <!-- <a href="Roshan Naik CV 2025.pdf" class="hero-btn" download>📄 Download Resume</a> -->  
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section class="projects-section highlighted-projects">
+                <h2 class="section-title">Highlighted Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" id="brain-mri">
+                        <h3>Brain MRI Implicit Harmonisation</h3>
+                        <p>
+                            Honors project using machine learning to harmonize multi-site brain MRI data and improve autism classification
+                            accuracy.
+                        </p>
+                        <ul>
+                            <li>Technologies: Python, deep learning, ComBat, cAAE, ABIDE I dataset</li>
+                            <li>Outcome: +2% ASD classification accuracy</li>
+                        </ul>
+                        <a href="#brain-mri-details" class="hero-btn">Go to project</a>
+                    </div>
+                    <div class="project-card" id="spotify">
+                        <h3>Spotify Song & Artist Recommender</h3>
+                        <p>
+                            A web app that recommends songs and artists based on your mood and preferences, built with Streamlit and theSpotify API (using Spotipy).                        </p>
+                        <ul>
+                            <li>Technologies: Python, Streamlit, Spotipy (Spotify API)</li>
+                            <li>Features: Mood-based or lyric-based search, popularity filters, live recommendations</li>
+                        </ul>
+                        <a href="#spotify-details" class="hero-btn">Go to project</a>
+                    </div>
+
+                    <div class="project-card" id="financial-ml">
+                        <h3>Financial Machine Learning Replication</h3>
+                        <p>
+                            Reproduced a published study’s neural network results on time-series financial data, focusing on out-of-sample R² and
+                            robust validation techniques.
+                        </p>
+                        <ul>
+                            <li>Technologies: Python, neural networks, time-series analysis</li>
+                            <li>Outcomes: replication of published OOS R² results</li>
+                        </ul>
+                        <a href="#financial-ml-details"class="hero-btn">Go to project</a>
+                    </div>
+
+                    <!-- <div class="project-card" id="wind-turbine">
+                        <h3>Wind Turbine Condition Monitoring</h3>
+                        <p>
+                            Designed a system to monitor and predict wind turbine faults using sensor data analytics,
+                            reducing
+                            downtime and maintenance costs.
+                        </p>
+                        <ul>
+                            <li>Technologies: MATLAB, Python, IoT</li>
+                            <li>Features: Anomaly detection, predictive maintenance, dashboard</li>
+                        </ul>
+                        <a href="#wind-turbine" class="project-link">Learn More</a>
+                    </div>
+
+                    <div class="project-card" id="heuristic-optimization">
+                        <h3>Campus Resource Optimization</h3>
+                        <p>
+                            Used heuristic algorithms to optimize campus resource allocation, improving efficiency and
+                            reducing
+                            operational costs.
+                        </p>
+                        <ul>
+                            <li>Technologies: Python, Genetic Algorithms</li>
+                            <li>Features: Simulation, optimization, reporting</li>
+                        </ul>
+                        <a href="#heuristic-optimization" class="project-link">Learn More</a>
+                    </div>
+
+                    <div class="project-card" id="interactive-dashboard">
+                        <h3>Interactive Data Dashboard</h3>
+                        <p>
+                            Built a web dashboard for real-time data visualization and analytics, enabling users to
+                            explore and
+                            interact with complex datasets.
+                        </p>
+                        <ul>
+                            <li>Technologies: Dash, Plotly, Python</li>
+                            <li>Features: Live charts, filtering, export options</li>
+                        </ul>
+                        <a href="#interactive-dashboard" class="project-link">Learn More</a>
+                    </div> -->
+
+                </div>
+            </section>
+            <section id="projects" class="projects-section all-projects">
+                <h2 class="section-title">All Projects</h2>
+                <div class="projects-list">
+                    <div class="project-card">
+                        <h3>Brain MRI Harmonisation for Autism Detection (Honours Project)</h3>
+                        <p>
+                            Engineering Honours project applying explicit and implicit harmonisation to multi-site brain MRI data for autism
+                            detection. Explored structural and diffusion MRI modalities, and developed machine learning models to address
+                            inter-site
+                            variability.
+                            
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'brain-mri-details')">Learn More</button>
+
+                        <div class="project-details" id="brain-mri-details">
+                            <ul>
+                                <li><strong>What I enjoyed:</strong> Tackling the challenge of medical imaging in a new domain, bridging
+                                    technical skills with neuroscience, and seeing measurable improvements in real-world data.</li>
+                                <li><strong>Techniques:</strong> ComBat statistical harmonization, conditional adversarial autoencoder (cAAE),
+                                    Python, deep learning</li>
+                                <li><strong>Dataset:</strong> ABIDE I (Autism Brain Imaging Data Exchange)</li>
+                                <li><strong>Result:</strong> Achieved a 2.35% improvement in ASD classification accuracy after harmonization.
+                                </li>
+                            </ul>
+                            <p class="details-summary" style="margin-top:1em;">
+                                This project addressed the challenge of harmonizing resting-state functional MRI data from multiple sites to
+                                improve consistency and support the classification of autism spectrum disorder (ASD). I compared a statistical
+                                method (ComBat) and a deep learning-based conditional adversarial autoencoder (cAAE), showing that the cAAE
+                                model improved classification accuracy by 2.35%. This work demonstrates the value of advanced harmonization for
+                                multi-site neuroimaging studies.
+                            </p>
+                            <!-- Add links if available -->
+                            <div style="display: flex; gap: 1em; align-items: center;">
+                                <a href="https://github.com/rosh2003/Harmonisation_fMRI" target="_blank" title="GitHub Repo">
+                                    <svg class="project-standalone-icon" width="28" height="28" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_601_59)">
+                                            <path
+                                                d="M18 38.0001C8 41.0001 8 33.0001 4 32.0001M32 44.0001V36.2601C32.075 35.3064 31.9462 34.3477 31.622 33.4477C31.2979 32.5477 30.7859 31.727 30.12 31.0401C36.4 30.3401 43 27.9601 43 17.0401C42.9995 14.2478 41.9254 11.5625 40 9.54012C40.9117 7.09713 40.8472 4.39682 39.82 2.00012C39.82 2.00012 37.46 1.30012 32 4.96012C27.416 3.71776 22.584 3.71776 18 4.96012C12.54 1.30012 10.18 2.00012 10.18 2.00012C9.15275 4.39682 9.08829 7.09713 10 9.54012C8.06025 11.5775 6.98505 14.287 7 17.1001C7 27.9401 13.6 30.3201 19.88 31.1001C19.222 31.7801 18.7145 32.5909 18.3906 33.48C18.0667 34.369 17.9336 35.3163 18 36.2601V44.0001"
+                                                stroke="#222e44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_601_59">
+                                                <rect width="48" height="48" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>      
+                        </div>        
+                    </div>
+                    <div class="project-card">
+                        <h3>Spotify Song & Artist Recommender</h3>
+                        <p>
+                            Discover new music tailored to your mood and taste using Spotify’s API and machine learning.
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'spotify-details')">Learn More</button>
+                        <div class="project-details" id="spotify-details">
+                            <ul>
+                                <li><strong>What I enjoyed:</strong> Building an interactive UI with Streamlit and experimenting with seeing My
+                                    Liked Songs results.</li>
+                                <li><strong>Tech:</strong> Python, Streamlit, Spotipy, Spotify API</li>
+                                <li><strong>Reflections:</strong> This was a fun passion project. I love listening to music, and Spotify’s
+                                    annual Wrapped announcements are always
+                                    exciting. I also enjoy the AI DJ X that Spotify offers and would love to build something similiar in the
+                                    future.
+                                </li>
+                            </ul>
+                            <div style="display: flex; gap: 1em; align-items: center;">
+                                <a href="https://spotify-app-app-zhrnowrmawtiapdddth9dl.streamlit.app" target="_blank"
+                                    class="project-link live-app-btn">Live App</a>
+                                <a href="https://github.com/rosh2003/spotify-streamlit-app" target="_blank" title="Spotify Project Repo" aria-label="GitHub">
+                                
+                                    <svg class="project-standalone-icon" width="28" height="28" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_601_59)">
+                                            <path
+                                                d="M18 38.0001C8 41.0001 8 33.0001 4 32.0001M32 44.0001V36.2601C32.075 35.3064 31.9462 34.3477 31.622 33.4477C31.2979 32.5477 30.7859 31.727 30.12 31.0401C36.4 30.3401 43 27.9601 43 17.0401C42.9995 14.2478 41.9254 11.5625 40 9.54012C40.9117 7.09713 40.8472 4.39682 39.82 2.00012C39.82 2.00012 37.46 1.30012 32 4.96012C27.416 3.71776 22.584 3.71776 18 4.96012C12.54 1.30012 10.18 2.00012 10.18 2.00012C9.15275 4.39682 9.08829 7.09713 10 9.54012C8.06025 11.5775 6.98505 14.287 7 17.1001C7 27.9401 13.6 30.3201 19.88 31.1001C19.222 31.7801 18.7145 32.5909 18.3906 33.48C18.0667 34.369 17.9336 35.3163 18 36.2601V44.0001"
+                                                stroke="#222e44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_601_59">
+                                                <rect width="48" height="48" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>    
+                                </a>
+                            </div>
+                            <p class="details-summary" style="margin-top:1em;">
+                                Users can search for songs and artists by mood, popularity, and other criteria. The project demonstrates
+                                skills in
+                                Python, API integration, and UI development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Financial Machine Learning Replication Study</h3>
+                        <p>
+                            Replicated the neural network methodology from “Economic Trends and Equity Risk Premium” to evaluate model performance
+                            on financial time-series data. Developed custom training-validation workflows (rolling and expanding windows) to address
+                            the unique challenges of financial datasets.
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'financial-ml-details')">Learn More</button>
+                        <div class="project-details" id="financial-ml-details">
+
+                            <ul>
+                                <li>
+                                    <strong>Project focus:</strong> Replicating the methodology and results from <em>Economic Trends and Equity Risk
+                                        Premium</em> (Han, Lu, & Zhou, 2018) using neural networks on financial time-series data.
+                                </li>
+                                <li>
+                                    <strong>Techniques:</strong> Implemented a neural network with three hidden layers and ReLU activation, using 14
+                                    predictors as in the original study. Manual hyperparameter tuning was performed for L1 penalty and learning
+                                    rate.
+                                </li>
+                                <li>
+                                    <strong>Validation:</strong> Developed custom training-validation workflows (rolling and expanding windows) to
+                                    address the unique challenges of financial time-series, ensuring temporal integrity and avoiding data leakage.
+                                </li>
+                                <li>
+                                    <strong>Challenges:</strong> High noise and variability in financial data, inability to use standard
+                                    cross-validation, and the need to align with the study’s unique R² formula.
+                                </li>
+                                <li>
+                                    <strong>Skills gained:</strong> Feature engineering, time-series analysis, neural network optimization, and
+                                    critical evaluation of model performance in challenging domains.
+                                </li>                   
+                            </ul>
+                            <div style="text-align:center; margin: 1.5em 0;">
+                                <img src="finance_OOS.png" alt="Equity Premium: Actual vs Average OOS Predictions"
+                                    style="max-width:100%; border-radius:12px; box-shadow:0 2px 16px #4F8FEA33;">
+                                <div style="color:#222e44; font-size:0.98em; margin-top:0.5em;">
+                                    <em>As seen above, this is the ensemble OOS predictions, showcasing the noise and generalization of the final
+                                        model.</em>
+                                </div>
+                            </div>
+                            <p class="details-summary" style="margin-top:1em;">
+                                This replication study in financial machine learning focused on reproducing the Out-of-Sample (OOS) R² value
+                                reported in the original paper. The objective was not to achieve the best possible results, but to faithfully
+                                replicate the published findings and understand the nuances of financial modeling. Working with time-series data
+                                introduced unique challenges, such as the inability to use standard cross-validation or data shuffling, which
+                                required custom workflows to preserve temporal order. The project provided valuable insights into model performance
+                                and limitations, and advanced my skills in feature engineering, time-series analysis, and neural network
+                                optimization for complex, noisy domains.                    
+                            </p>
+
+                        </div>      
+                    </div>
+                    <div class="project-card">
+                        <h3>Heuristic Optimization Project: Minimizing Campus Travel</h3>
+                        <p>
+                            Designed and implemented heuristic algorithms to optimize the assignment of five faculties to five campus sites,
+                            aiming to minimize total travel distance for students and staff.
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'heuristic-optimization-details')">Learn More</button>
+                        <div class="project-details" id="heuristic-optimization-details">
+                            <ul>
+                                <li>
+                                    <strong>Project focus:</strong> Formulated a combinatorial optimization problem for campus planning,
+                                    where the goal was to assign faculties to locations to minimize aggregate travel.
+                                </li>
+                                <li>
+                                    <strong>Heuristics implemented:</strong> Developed and compared <b>Next Descent</b> and <b>Steepest
+                                        Descent</b> algorithms, both using a swap-based neighborhood rule to iteratively improve solutions.
+                                </li>
+                                <li>
+                                    <strong>Tabu Search:</strong> Extended the approach by implementing <b>Tabu Search</b> with a memory of
+                                    eight previous moves, enabling the algorithm to escape local optima and explore the solution space more
+                                    effectively.
+                                </li>
+                                <li>
+                                    <strong>Analysis:</strong> Compared the performance of all algorithms, observing that Next Descent
+                                    sometimes outperformed Steepest Descent due to its exploration pattern, while Tabu Search consistently
+                                    found better solutions by avoiding cycles and local traps.
+                                </li>
+                                <li>
+                                    <strong>Skills gained:</strong> Heuristic algorithm design, performance analysis, combinatorial
+                                    optimization, and practical problem-solving in a real-world context.
+                                </li>
+                            </ul>
+                            <div style="text-align:center; margin: 1.5em 0;">
+                                <img src="noTabu.png" alt="Performance of Next and Steepest Descent"
+                                    style="max-width:100%; border-radius:12px; box-shadow:0 2px 16px #4F8FEA33;">
+                                <div style="color:#222e44; font-size:0.98em; margin-top:0.5em;">
+                                    <em>Performance of Next Descent and Steepest Descent heuristics. Next Descent achieved a lower objective
+                                        value in this instance, highlighting the nuanced behavior of local search methods.</em>
+                                </div>
+                            </div>
+                            <div style="text-align:center; margin: 1.5em 0;">
+                                <img src="all_algorithms.png" alt="Performance of All Algorithms"
+                                    style="max-width:100%; border-radius:12px; box-shadow:0 2px 16px #4F8FEA33;">
+                                <div style="color:#222e44; font-size:0.98em; margin-top:0.5em;">
+                                    <em>Tabu Search (purple) outperformed both Next and Steepest Descent by escaping local optima and
+                                        achieving the lowest total travel distance.</em>
+                                </div>
+                            </div>
+                            <p class="details-summary" style="margin-top:1em;">
+                                This project deepened my understanding of heuristic optimization by requiring the design, coding, and
+                                critical comparison of multiple algorithms. I learned how different search strategies and memory mechanisms
+                                (like Tabu lists) can dramatically affect solution quality and convergence. The experience reinforced the
+                                importance of algorithm selection and parameter tuning in practical optimization problems.
+                            </p>
+                        </div>              
+                    </div>
+                    <div class="project-card">
+                        <h3>Wind Turbine Design and Testing (Final Year Project)</h3>
+                        <p>
+                            Designed, built, and tested a functional wind turbine as part of a four-member team, applying advanced
+                            computational modeling and analytical engineering principles.
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'wind-turbine-details')">Learn More</button>
+                        <div class="project-details" id="wind-turbine-details">
+                            <ul>
+                                <li>
+                                    <strong>Project focus:</strong> Developed a wind turbine from concept to testing, integrating
+                                    aerodynamic theory, computational optimization, and hands-on engineering.
+                                </li>
+                                <li>
+                                    <strong>Technical approach:</strong> Used Blade Element Momentum (BEM) theory to select optimal airfoils
+                                    and employed a genetic algorithm to optimize blade orientation and design parameters for maximum energy
+                                    generation.
+                                </li>
+                                <li>
+                                    <strong>Engineering challenges:</strong> Ensured reproducible blade manufacturing and precise setting
+                                    angles through systematic calculations, testing, and team coordination.
+                                </li>
+                                <li>
+                                    <strong>Testing & validation:</strong> Conducted rigorous performance testing across various wind speeds
+                                    to validate theoretical predictions and optimize real-world output.
+                                </li>
+                                <li>
+                                    <strong>Skills gained:</strong> Computational modeling, optimization algorithms, practical
+                                    problem-solving, and effective teamwork in an engineering context.
+                                </li>
+                            </ul>
+                            <div style="text-align:center; margin: 1.5em 0;">
+                                <img src="wind-turbine.jpg" alt="Wind Turbine Design and Testing"
+                                    style="max-width:100%; border-radius:12px; box-shadow:0 2px 16px #4F8FEA33;">
+                                <div style="color:#222e44; font-size:0.98em; margin-top:0.5em;">
+                                    <em>Custom-designed wind turbine built and tested for optimal energy generation, demonstrating the
+                                        integration of computational and practical engineering skills.</em>
+                                </div>
+                            </div>
+                            <p class="details-summary" style="margin-top:1em;">
+                                This final year project highlights my ability to combine theoretical knowledge with hands-on engineering. By
+                                leveraging computational optimization and collaborative problem-solving, our team delivered a
+                                high-performing wind turbine solution validated through real-world testing.
+                            </p>
+                        </div>              
+                    </div>
+                    <div class="project-card">
+                        <h3>Interactive Dashboard: State Comparison in the USA</h3>
+                        <p>
+                            Developed an interactive R Shiny dashboard to visualize and compare US states across multiple metrics, enabling
+                            users to explore data relationships and highlight specific states.
+                        </p>
+                        <button class="project-link" onclick="toggleDetails(this,'dashboard-details')">Learn More</button>
+                        <div class="project-details" id="dashboard-details">
+                            <ul>
+                                <li>
+                                    <strong>Project focus:</strong> Built a user-friendly dashboard for state-by-state comparison using R
+                                    Shiny, as part of a data visualization coursework project.
+                                </li>
+                                <li>
+                                    <strong>Features:</strong>
+                                    <ul>
+                                        <li>Select a state from the map to highlight it in red on all plots.</li>
+                                        <li>Choose variables for the x and y axes to customize scatter plots.</li>
+                                        <li>Instantly visualize how the selected state compares to others in the dataset.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Skills gained:</strong> Interactive UI design, R Shiny development, data processing, and
+                                    effective presentation of insights.
+                                </li>
+                            </ul>
+                            <div style="margin: 1.5em 0;">
+                                <a href="https://rnaik.shinyapps.io/2C-Task-14/" target="_blank" class="project-link live-app-btn">View
+                                    Dashboard</a>
+                            </div>
+                            <p class="details-summary" style="margin-top:1em;">
+                                This project solidified my understanding of interactive data visualization and user experience design in R.
+                                By allowing users to customize plots and instantly see comparisons, I learned how to present complex data in
+                                an accessible and engaging way.
+                            </p>
+                        </div>              
+                    </div>
+                </div>
+                    
+            </section>
+            <section id="certifications" class="certifications-section">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-card">
+                    <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
+                        alt="Microsoft Certified: Azure AI Fundamentals" class="cert-badge">
+                    <div>
+                        <h3>Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
+                        <p>
+                            Awarded by Microsoft in June 2025.<br>
+                            Demonstrates foundational knowledge of artificial intelligence (AI) and machine learning (ML) concepts
+                            and related Microsoft Azure services.
+                        </p>
+                        <a href="https://learn.microsoft.com/en-us/certifications/azure-ai-fundamentals/" target="_blank"
+                            class="cert-link">View Certification Details</a>
+                    </div>
+                </div>  
+            </section>
+        </main>
+        
     
-    <style>
-        .btn {
-            display: inline-block;
-            padding: 0.5em 1em;
-            color: #fff;
-            background-color: #1A2A6C; /* Navy blue */
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 0.5em;
-        }
-        .btn:hover {
-            background-color: #15305b; /* Darker navy for hover */
-        }
-    </style>
-    <!-- University Projects Section -->
-    <h2>University Projects</h2>
-    <section id="brain-mri" class="section">
-        <!-- <h2>University Projects</h2> -->
-
-        <div class="project">
-            <p class="project-title">Honors Project: Brain MRI Implicit Harmonisation</p>
-            <!-- <p class="project-desc">This project focused on developing statistical and machine learning models to achieve implicit harmonisation of brain MRI data, addressing variability across multiple sites. The aim of this project was to improve functional MRI input data to improve the classification accuracy of detecting Autism Spectrum Disorder in patients. It showcases my skills in medical imaging, machine learning model evaluation and applying machine learning techniques to a new field, and application in real-world datasets.</p> -->
-            <p class="project-desc">
-                A research-driven initiative focused on developing machine learning and statistical models for implicit harmonization of brain MRI data, addressing inter-site variability in multi-site datasets. The project aimed to enhance the quality of functional MRI input data to improve classification accuracy in detecting Autism Spectrum Disorder (ASD). By leveraging advanced techniques like connectivity matrix harmonization, the project achieved a promising 2% improvement in ASD classification accuracy using the ABIDE I dataset, highlighting the potential of this approach in real-world applications.
-            </p>
-            <p class="project-desc">
-                Working in the unfamiliar field of medical imaging, I navigated complex challenges that required innovative thinking and a strong technical foundation. The need to bridge my existing expertise with new domain knowledge highlighted my ability to learn quickly and apply machine learning methods effectively in interdisciplinary settings. This experience reflects the rigor and focus I bring to solving difficult problems, ensuring impactful and measurable results even in novel and demanding contexts.
-            </p>
+    <footer>
+        <div class="container">
+            &copy; <span id="year"></span> Roshan Naik. All rights reserved.
         </div>
-    </section>
+    </footer>
+    <script src="js/main.js"></script>
 
-    <section id="financial-ml" class="section">
-        <div class="project">
-            <p class="project-title">Financial Machine Learning Replication Project</p>
-            <p class="project-desc">
-                A replication study in financial machine learning focused on reproducing an Out-of-Sample (OOS) R² value using neural networks trained on time-series financial data. The project explored innovative training-validation approaches tailored to the complexities of financial datasets, such as rolling and expanding training windows, to improve monthly OOS predictions. Despite the high noise and variability inherent in financial data, the project provided valuable insights into model performance and limitations, advancing my skills in feature engineering, time-series analysis, and neural network optimization for challenging domains.
-            </p>
-            <p class="project-desc">
-                The objective was not to achieve the best possible results but to faithfully replicate the findings of the study Economic Trends and Equity Risk Premium by Yufeng Han, Yueliang Lu, and Guofu Zhou. To this end, I implemented a neural network with three hidden layers and ReLU activation, using 14 predictors derived from the study. The process involved manual hyperparameter tuning for L1 penalty values and learning rates, reflecting the need for careful experimentation in financial modeling. Working with time-series data introduced additional challenges, such as the inability to use standard cross-validation or data shuffling, which required tailoring the workflow to preserve temporal integrity. The study also employed a unique R² formula, further emphasizing the importance of aligning implementation details with the original research.
-            </p>
-            <img src="finance_OOS.png" alt="OOS equity premium predictions" class="project-image">
-            <p class="project-desc">
-                As seen above, this is the ensemble OOS predictions, showcasing the noise and generalization of the final model.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="wind-turbine" class="section">
-        <div class="project">
-            <p class="project-title">Capstone Project: Wind Turbine Design and Testing</p>
-            <p class="project-desc">Collaborated as part of a four-member team to design, build, and test a functional wind turbine. This capstone project exemplified the key principles of my BE (Hons) in Engineering Science degree, particularly in computational modeling and analytical thinking. Blade Element Momentum (BEM) theory was used to select airfoils that offered optimal aerodynamic performance, while a genetic algorithm was employed to determine the most efficient blade orientations and design parameters for maximum energy generation.</p>
-            <p class="project-desc">The project required a systematic approach to problem-solving and effective communication within the team. This was especially crucial for ensuring the blades were manufactured reproducibly, maintaining uniformity across all components. Setting the correct blade setting angle involved precise calculations and testing to ensure performance matched theoretical predictions. Additionally, optimizing blade design parameters using computational tools underscored the importance of combining theoretical knowledge with hands-on engineering.</p>
-            <p class="project-desc">Post-construction, the turbine underwent rigorous testing across various wind speeds to evaluate its performance metrics, showcasing the practical application of engineering principles to solve real-world challenges. This project highlights my ability to integrate computational optimization techniques, practical problem-solving skills, and effective team collaboration to deliver a tested, high-performing solution.</p>
-            <img src="20240520_113917.jpg" alt="Windmill group photo" class="project-image">
-            <p class="project-desc">Above is our group and the turbine prior to testing. </p>
-        </div>
-    </section>
-    
-    <section id="heuristic-optimization" class="section">
-        <div class="project">
-            <p class="project-title">Heuristic Optimization Project: Minimizing Campus Travel</p>
-            <p class="project-desc">As part of one of my courses, I worked on optimizing campus locations for five faculties and five potential sites. The objective was to minimize the total travel distance for students and staff moving between faculties and their respective locations. This problem required designing and implementing heuristic algorithms to explore potential solutions effectively.</p>
-            <p class="project-desc">The first task involved coding the Next Descent and Steepest Descent heuristics, both employing the same neighborhood rule. These approaches provided initial insights into solution quality and efficiency. The results are shown below:</p>
-            <img src="noTabu.png" alt="Next Descent and Steepest Descent" class="project-image">
-            <p class="project-desc">Interestingly, Next Descent achieved a lower objective function value compared to Steepest Descent in this case, showcasing the nuances of heuristic performance.</p>
-            <p class="project-desc">The second task involved implementing the Tabu Search algorithm, incorporating a history of eight moves to escape local optima. This algorithm outperformed both Next Descent and Steepest Descent, delivering superior results as illustrated below:</p>
-            <img src="all_algorithms.png" alt="Performance Comparison of Heuristics" class="project-image">
-            <p class="project-desc">
-                This project demonstrated my ability to design and compare heuristic optimization algorithms, analyze performance differences, and solve practical problems using computational approaches.
-            </p>
-        </div>
-    </section>
-
-    <section id="interactive-dashboard" class="section">
-        <p class="project-title">Interactive Dashboard: State Comparison in the USA</p>
-        <p class="project-desc">
-            During my second year, I developed an interactive R Shiny dashboard as part of a coursework project. The goal was to create a user-friendly tool to visualize how a selected state compared to others across various metrics. The dashboard allows users to:
-        </p>
-        <ul class="project-desc">
-            <li>Select a specific state from the map.</li>
-            <li>Choose variables for the x and y axes to customize the scatter plot.</li>
-            <li>Visualize the selected state's position (in red) relative to other states in the dataset.</li>
-        </ul>
-        <p class="project-desc">
-            This project demonstrated my ability to design intuitive interfaces and work with interactive data visualization tools in R. It helped solidify my understanding of data processing, customization of visual elements, and effective presentation of insights to users.
-        </p>
-        <p class="project-desc">
-            Click the button below to explore the dashboard:
-        </p>
-        <a href="https://rnaik.shinyapps.io/2C-Task-14/" class="btn" target="_blank">View Dashboard</a>
-
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Roshan Naik. All rights reserved.</p>
-    <p>Contact me: 
-        <a href="mailto:rosh2003@outlook.com" class="contact-link">rosh2003@outlook.com</a> | 
-        <a href="https://www.linkedin.com/in/roshan-naik-2b4a52234" target="_blank" class="contact-link">LinkedIn</a>
-    </p>
-</footer>
-
-<style>
-    .contact-link {
-        color: #ffffff; /* White color for better contrast */
-        text-decoration: none;
-    }
-    .contact-link:hover {
-        color: #dcdcdc; /* Light gray on hover */
-    }
-    .contact-link:visited {
-        color: #ffffff; /* Keep links white even if visited */
-    }
-    .project-image {
-        max-width: 100%; /* Image fits within the container */
-        height: auto; /* Maintains aspect ratio */
-        margin-top: 10px;
-        border-radius: 5px; /* Adds rounded corners */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    }
-</style>
-
-</body>
+    </body>
 </html>
-
-
-
-
